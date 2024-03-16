@@ -1,17 +1,17 @@
- import React from 'react'
-import Background from './Components/Background'
+import React from "react";
+import Background from "./Components/Background";
+import Foregorund from "./Components/Foregorund";
+
+
+const App = () => {
+  return (
+    <div className="relative w-full h-screen bg-zinc-800">
+      <Background></Background>
+
+      <Foregorund></Foregorund>
  
- const App = () => {
-   
-   return (
-       <div className='relative w-full h-screen bg-zinc-800'> 
-          <Background></Background>
+    </div>
+  );
+};
 
-
-          <div className='fixed top-0 left-0 z-[3] w-full h-full  '> </div>
-
-       </div>
-   )
- }
- 
- export default App
+export default App;
